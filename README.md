@@ -1,39 +1,65 @@
-# TinyEngine
+# KirbyDiscovery
 
-- DirectX11 기반 GameEngine
+DirectX11 기반 3D 게임 엔진 TinyEngine을 활용하여 제작한  
+**별의 커비 디스커버리 모작 프로젝트**입니다.
 
-# Features
+## Gameplay Video
 
-- PBR Shader
-- MRT, Deferred Rendering
-- SSAO
-- 물리엔진 라이브러리를 활용한 Physics Simulation
-- ImGui 라이브러리를 활용한 각종 Editor
-  - Model Editor
-  - Material Editor
-  - Tilemap Editor
-  - Sprite Editor
-  - ...    
+- https://youtu.be/X7emVP3akjs
 
-# Building
 
-1. Download Zip
-2. [External 압축 파일](https://drive.google.com/file/d/1-4oStuscaPT3Nftd6fMNFPeWw2Hn0ubE/view?usp=sharing) 다운로드 후 TinyEngine 폴더에 추가 
-3. [OutputFile 압축 파일](https://drive.google.com/file/d/1_r-vsvaJEg3sFpUzAtetpwWt6ZwUS3o5/view?usp=drive_link) 다운로드 후 TinyEngine 폴더에 추가
-4. Client, Engine, Scripts 프로젝트 → 속성 → 구성 속성 → 디버깅 → 작업 디렉터리 - $(SolutionDir)OutputFile\bin 으로 설정
+## Project Info
 
-![image](https://github.com/devJSY/TinyEngine/assets/90514882/f785ce4f-ef69-4535-bcf0-2f48b7cacbb0)
+| 항목 | 내용 |
+| --- | --- |
+| 프로젝트 | 별의 커비 디스커버리 모작 |
+| 개발 기간 | 2024.06.20 ~ 2024.09.05 |
+| 개발 인원 | 4명 |
+| 언어 | C++ |
+| 그래픽스 | DirectX11 |
+| 개발 환경 | Visual Studio 2022 |
 
-## 폴더 경로 설정
 
-![image](https://github.com/devJSY/TinyEngine/assets/90514882/e88f3422-1968-4bb1-a0e6-d380ca7c420b)
+## My Contributions
 
-# libraries
+- Kirby 기본 상태 및 플레이어 조작 구현
+- Kirby FSM 구조 개선
+- Cutter, Fire 카피 능력 구현
+- Vending Machine 오브젝트 카피 기능 구현
+- 다양한 상황에 대응하는 3D 카메라 시스템 구현
+- 사다리 이동 기능 구현
+- 레벨 전환, 체크포인트, 낙사 트리거 등 레벨 진행 기능 구현
+- Kirby 피격, 변신, Smoke, Vacuum, Fire 관련 이펙트 구현 참여
+- 사운드 및 에셋 적용 작업 참여
 
-- DirectX
-- Box2d
+## Features
+
+- 3D Kirby 플레이어 조작 및 상태 관리
+- 카피 능력 시스템
+- 오브젝트 카피 시스템
+- 몬스터 / 보스 / 스테이지 진행
+- 카메라 연출 시스템
+  - Normal View
+  - Progress View
+  - Two Target View
+  - Boss Camera
+  - Fixed View
+  - Shake / Tilt Effect
+- 사다리, 체크포인트, 낙사, 스테이지 클리어 처리
+- UI, 이펙트, 사운드 연출
+
+## Libraries
+
+- DirectX11
+- HLSL
 - PhysX
+- Box2D
 - ImGui
 - ImGuizmo
-- Fbxsdk
+- FBX SDK
 - FMOD
+
+## More Details
+
+- [Project Page](https://app.notion.com/p/3d2873f472cd4959be07a80047414ad6?source=copy_link)
+- [Technical Notes](https://app.notion.com/p/Kirby-1207249cbcb880f484dffe8affb6fd0f?source=copy_link)
